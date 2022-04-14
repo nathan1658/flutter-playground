@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_playground/example_data.dart';
+import 'package:flutter_playground/home_screen.dart';
+
+import 'color_scheme.dart';
 
 /// SliverAppBar
 class FAppBar extends SliverAppBar {
@@ -134,7 +137,6 @@ class FAppBar extends SliverAppBar {
               Stack(
                 children: [
                   PromoText(title: data.bannerText), // 粉紅色部分（有點類似廣告）(宣傳文字)
-                  FlutterHead(), // flutter 頭像
                   Column(
                     children: [
                       HeaderClip(data: data, context: context),
